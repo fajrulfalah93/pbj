@@ -6,13 +6,13 @@ import Image from "next/image";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="bg-brick-600">
+    <div className="bg-brick-500">
       <div className="flex flex-col lg:flex-row">
-        <div className="flex items-center justify-between px-4 py-4 lg:py-0 border-b border-brick-300 lg:border-b-0">
+        <div className="flex items-center justify-between px-4 py-4 lg:py-0 border-b border-brick-400 lg:border-b-0">
           <div>
             <Link
               href="/"
-              className="flex items-center px-4 py-2 font-semibold text-brick-100 hover:text-white w-72"
+              className="flex items-center px-4 py-2 font-semibold text-brick-200 hover:text-white w-72"
             >
               <Image src={"/logo.png"} alt="logo" width={60} height={30} />
               <text className="pl-2">UKPBJ Kab. Mojokerto</text>
@@ -55,25 +55,25 @@ function Navbar() {
           <div className="flex flex-col lg:flex-row">
             <Link
               href="/sirup"
-              className="block px-4 py-2 lg:py-4 font-semibold text-brick-100 hover:text-white"
+              className="block px-4 py-2 lg:py-4 font-semibold text-brick-200 hover:text-white"
             >
               SIRUP
             </Link>
             <Link
               href="#"
-              className="block px-4 py-2 lg:py-4 font-semibold text-brick-100 hover:text-white"
+              className="block px-4 py-2 lg:py-4 font-semibold text-brick-200 hover:text-white"
             >
               Buku Tamu
             </Link>
             <Link
               href="#"
-              className="block px-4 py-2 lg:py-4 font-semibold text-brick-100 hover:text-white"
+              className="block px-4 py-2 lg:py-4 font-semibold text-brick-200 hover:text-white"
             >
               Portal Lain
             </Link>
             <Link
               href="#"
-              className="block px-4 py-2 lg:py-4 font-semibold text-brick-100 hover:text-white"
+              className="block px-4 py-2 lg:py-4 font-semibold text-brick-200 hover:text-white"
             >
               Masuk
             </Link>
