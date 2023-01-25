@@ -824,25 +824,26 @@ export default function Sirup() {
       <Navbar />
       <main>
         <div className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
-          <div className="absolute inset-0 bg-white bg-center"></div>
-          <div className="min-w-sm relative mx-auto w-full max-w-2xl bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:rounded-xl sm:px-10">
-            <div className="w-full">
-              <div className="flex">
-                <div>
+          <div className="absolute inset-0 bg-white bg-center items-center justify-center"></div>
+          <div className="min-w-sm relative mx-auto w-full max-w-2xl items-center justify-center bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:rounded-xl sm:px-10">
+            <div className="w-full items-center justify-center">
+              <div className="flex items-center justify-center">
+                <div className="mr-10 hidden pr-7 md:block">
                   <Image
-                    className="mr-10 hidden pr-7 md:block"
                     src={"/bupwabup.png"}
                     alt="logo"
                     width={500}
                     height={870}
                   />
                 </div>
-                <div>
+                <div className="flex flex-col items-center justify-center">
                   <div className="p-1">
-                    <div className="text-xl font-semibold">
+                    <div className="text-center text-xl font-semibold">
                       Rekap Data SIRUP
                     </div>
-                    <div className="text-xl font-semibold">Kab. Mojokerto</div>
+                    <div className="text-center text-xl font-semibold">
+                      Kab. Mojokerto
+                    </div>
                   </div>
                   <div className="p-1">
                     <input
