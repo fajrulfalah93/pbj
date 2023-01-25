@@ -1,7 +1,10 @@
 import Head from "next/head";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import React, { useState } from "react";
 import axios from "axios";
 import { writeFileXLSX, utils } from "xlsx";
+
 
 export default function Sirup() {
   let y = new Date();
@@ -813,11 +816,12 @@ export default function Sirup() {
   return (
     <>
       <Head>
-        <title>UKPBJ Kab. Mojokerto</title>
+        <title>UKPBJ Kab. Mojokerto - SIRUP</title>
         <meta name="description" content="Aplikasi PBJ" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar/>
       <main>
         <div className="flex-col">
           <div>
@@ -865,6 +869,7 @@ export default function Sirup() {
           </div>
         </div>
       </main>
+      <Footer/>
     </>
   );
 }
