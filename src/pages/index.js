@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,7 +15,18 @@ export default function Home() {
       <Navbar />
       <main>
         <div>
-          <h1>Selamat Datang!</h1>
+          <div className="relative flex min-h-screen flex-col justify-center overflow-hidden">
+            <div className="flex bg-white bg-center">
+              <div className="text-black">Selamat Datang!</div>
+              <Image
+                className="hidden md:block"
+                src={"/bupwabup.png"}
+                alt="logo"
+                width={500}
+                height={870}
+              />
+            </div>
+          </div>
         </div>
       </main>
       <Footer />
