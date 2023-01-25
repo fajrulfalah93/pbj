@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import React, { useState } from "react";
 import axios from "axios";
 import { writeFileXLSX, utils } from "xlsx";
+import Image from "next/image";
 
 export default function Sirup() {
   let y = new Date();
@@ -822,51 +823,71 @@ export default function Sirup() {
       </Head>
       <Navbar />
       <main>
-        <div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
-          <div class="absolute inset-0 bg-white bg-center">
-            <div className="flex-col">
-              <div>
-                <input
-                  className="mb-1 w-56 rounded-md border-2 py-1 pl-3 pr-1"
-                  type="number"
-                  step={1}
-                  min={2013}
-                  max={maxDate}
-                  value={year}
-                  onChange={(y) => setYear(y.target.value)}
-                ></input>
-              </div>
-              <div>
-                <button
-                  className="border-1 mb-1 w-56 rounded-md border-sky-600 bg-sky-600 p-1 font-medium text-white hover:brightness-90"
-                  onClick={makeAPICall}
-                >
-                  Unduh Hasil Rekap
-                </button>
-              </div>
-              <div>
-                <select
-                  className="mb-1 w-56 rounded-md border-2 py-1 pl-2"
-                  onChange={(m) => setMtd(m.target.value)}
-                >
-                  <option value={mtd}>Pilih Metode Pemilihan</option>
-                  <option value="pgl">Pengadaan Langsung</option>
-                  <option value="ep">E-Purchasing</option>
-                  <option value="slk">Seleksi</option>
-                  <option value="tdr">Tender</option>
-                  <option value="tdc">Tender Cepat</option>
-                  <option value="dk">Dikecualikan</option>
-                  <option value="pnl">Penunjukan Langsung</option>
-                  <option value="swa">Swakelola</option>
-                </select>
-              </div>
-              <div>
-                <button
-                  className="border-1 mb-1 w-56 rounded-md border-sky-600 bg-sky-600 p-1.5 font-medium text-white hover:brightness-90"
-                  onClick={makeAPICall2}
-                >
-                  Unduh Detail Pemilihan
-                </button>
+        <div className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
+          <div className="absolute inset-0 bg-white bg-center"></div>
+          <div className="min-w-sm relative mx-auto w-full max-w-2xl bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:rounded-xl sm:px-10">
+            <div className="w-full">
+              <div className="flex">
+                <div>
+                  <Image
+                    className="mr-10 hidden pr-7 md:block"
+                    src={"/bupwabup.png"}
+                    alt="logo"
+                    width={500}
+                    height={870}
+                  />
+                </div>
+                <div>
+                  <div className="p-1">
+                    <div className="text-xl font-semibold">
+                      Rekap Data SIRUP
+                    </div>
+                    <div className="text-xl font-semibold">Kab. Mojokerto</div>
+                  </div>
+                  <div className="p-1">
+                    <input
+                      className="mb-1 w-56 rounded-md border-2 py-1 pl-3 pr-1"
+                      type="number"
+                      step={1}
+                      min={2013}
+                      max={maxDate}
+                      value={year}
+                      onChange={(y) => setYear(y.target.value)}
+                    ></input>
+                  </div>
+                  <div className="p-1">
+                    <button
+                      className="border-1 mb-1 w-56 rounded-md border-sky-600 bg-sky-600 p-1 font-medium text-white hover:brightness-90"
+                      onClick={makeAPICall}
+                    >
+                      Unduh Hasil Rekap
+                    </button>
+                  </div>
+                  <div className="p-1">
+                    <select
+                      className="mb-1 w-56 rounded-md border-2 py-1 pl-2"
+                      onChange={(m) => setMtd(m.target.value)}
+                    >
+                      <option value={mtd}>Pilih Metode Pemilihan</option>
+                      <option value="pgl">Pengadaan Langsung</option>
+                      <option value="ep">E-Purchasing</option>
+                      <option value="slk">Seleksi</option>
+                      <option value="tdr">Tender</option>
+                      <option value="tdc">Tender Cepat</option>
+                      <option value="dk">Dikecualikan</option>
+                      <option value="pnl">Penunjukan Langsung</option>
+                      <option value="swa">Swakelola</option>
+                    </select>
+                  </div>
+                  <div className="p-1">
+                    <button
+                      className="border-1 mb-1 w-56 rounded-md border-sky-600 bg-sky-600 p-1.5 font-medium text-white hover:brightness-90"
+                      onClick={makeAPICall2}
+                    >
+                      Unduh Detail Pemilihan
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

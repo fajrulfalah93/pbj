@@ -16,15 +16,27 @@ export default function Home() {
       <main>
         <div>
           <div className="relative flex min-h-screen flex-col justify-center overflow-hidden">
-            <div className="flex bg-white bg-center">
-              <div className="text-black">Selamat Datang!</div>
-              <Image
-                className="hidden md:block"
-                src={"/bupwabup.png"}
-                alt="logo"
-                width={500}
-                height={870}
-              />
+            <div className="flex justify-between bg-white bg-center">
+              <div className="ml-10">
+                <div className="text-4xl font-semibold text-black">
+                  Selamat Datang!
+                </div>
+                <div className="align-middle text-4xl font-semibold text-black">
+                  di Aplikasi SiBAJA Kab. Mojokerto
+                </div>
+                <div className="align-middle text-2xl text-black">
+                Sistem Informasi Pengadaan Barang dan Jasa
+                </div>
+              </div>
+              <div>
+                <Image
+                  className="mr-10 hidden md:block"
+                  src={"/bupwabup.png"}
+                  alt="logo"
+                  width={500}
+                  height={870}
+                />
+              </div>
             </div>
           </div>
         </div>
