@@ -16,7 +16,7 @@ export default function Home() {
       <main>
         <div>
           <div className="relative flex min-h-screen flex-col justify-center overflow-hidden">
-            <div className="flex justify-between bg-white bg-center">
+            <div className="flex justify-center bg-white bg-center">
               <div className="ml-10">
                 <div className="text-4xl font-semibold text-black">
                   Selamat Datang!
