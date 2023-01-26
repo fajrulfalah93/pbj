@@ -30,22 +30,22 @@ export default function Sirup() {
   const makeAPICall = async () => {
     try {
       let response = await axios.get(
-        "https://api.codetabs.com/v1/proxy?quest=https://sirup.lkpp.go.id/sirup/datatablectr/dataruppenyediakldi?idKldi=D170&tahun=" +
+        "https://corsget.vercel.app/sirup.lkpp.go.id:443/sirup/datatablectr/dataruppenyediakldi?idKldi=D170&tahun=" +
           year
       );
       const penyedia = response.data.aaData;
       response = await axios.get(
-        "https://api.codetabs.com/v1/proxy?quest=https://sirup.lkpp.go.id/sirup/datatablectr/datarupswakelolakldi?idKldi=D170&tahun=" +
+        "https://corsget.vercel.app/sirup.lkpp.go.id:443/sirup/datatablectr/datarupswakelolakldi?idKldi=D170&tahun=" +
           year
       );
       const swakelola = response.data.aaData;
       response = await axios.get(
-        "https://api.codetabs.com/v1/proxy?quest=https://sirup.lkpp.go.id/sirup/datatablectr/dataruppenyediaswakelolaallrekapkldi?idKldi=D170&tahun=" +
+        "https://corsget.vercel.app/sirup.lkpp.go.id:443/sirup/datatablectr/dataruppenyediaswakelolaallrekapkldi?idKldi=D170&tahun=" +
           year
       );
       const pdsw = response.data.aaData;
       response = await axios.get(
-        "https://api.codetabs.com/v1/proxy?quest=https://sirup.lkpp.go.id/sirup/datatablectr/datatableruprekapkldi?idKldi=D170&tahun=" +
+        "https://corsget.vercel.app/sirup.lkpp.go.id:443/sirup/datatablectr/datatableruprekapkldi?idKldi=D170&tahun=" +
           year
       );
       const rekap = response.data.aaData;
@@ -403,18 +403,18 @@ export default function Sirup() {
       }
 
       let response = await axios.get(
-        "https://api.codetabs.com/v1/proxy?quest=https://sirup.lkpp.go.id/sirup/datatablectr/dataruppenyediakldi?idKldi=D170&tahun=" +
+        "https://corsget.vercel.app/sirup.lkpp.go.id:443/sirup/datatablectr/dataruppenyediakldi?idKldi=D170&tahun=" +
           year
       );
       const penyedia2 = response.data.aaData;
       response = await axios.get(
-        "https://api.codetabs.com/v1/proxy?quest=https://sirup.lkpp.go.id/sirup/datatablectr/dataruppenyediaswakelolaallrekapkldi?idKldi=D170&tahun=" +
+        "https://corsget.vercel.app/sirup.lkpp.go.id:443/sirup/datatablectr/dataruppenyediaswakelolaallrekapkldi?idKldi=D170&tahun=" +
           year
       );
       const pdsw2 = response.data.aaData;
 
       response = await axios.get(
-        "https://api.codetabs.com/v1/proxy?quest=https://sirup.lkpp.go.id/sirup/datatablectr/datarupswakelolakldi?idKldi=D170&tahun=" +
+        "https://corsget.vercel.app/sirup.lkpp.go.id:443/sirup/datatablectr/datarupswakelolakldi?idKldi=D170&tahun=" +
           year
       );
       const swa2 = response.data.aaData;
