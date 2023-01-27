@@ -54,7 +54,7 @@ function Navbar() {
         >
           <div className="flex flex-col lg:flex-row">
             <Link
-              href="/sirup"
+              href="#"
               className="block px-4 py-2 font-semibold text-brick-200 hover:text-white lg:py-4"
             >
               SIRUP
