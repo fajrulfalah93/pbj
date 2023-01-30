@@ -392,7 +392,7 @@ export default function Test(props) {
       }
 
       const penyedia2 = dtPenyedia.aaData;
-      const swakelola2 = dtSwakelola.aaData;
+      const swa2 = dtSwakelola.aaData;
       const pdsw2 = dtPdsw.aaData;
 
       let tmpTP = [];
@@ -876,10 +876,10 @@ export default function Test(props) {
 }
 
 export async function getServerSideProps() {
-  const filePath1 = path.join(process.cwd(), "recap.json");
-  const filePath2 = path.join(process.cwd(), "provider.json");
-  const filePath3 = path.join(process.cwd(), "selfMan.json");
-  const filePath4 = path.join(process.cwd(), "provSelf.json");
+  const filePath1 = path.join(process.cwd(), "/src/data/recap.json");
+  const filePath2 = path.join(process.cwd(), "/src/data/provider.json");
+  const filePath3 = path.join(process.cwd(), "/src/data/selfMan.json");
+  const filePath4 = path.join(process.cwd(), "/src/data/provSelf.json");
   const jsonData1 = await fsPromises.readFile(filePath1);
   const jsonData2 = await fsPromises.readFile(filePath2);
   const jsonData3 = await fsPromises.readFile(filePath3);
