@@ -34,6 +34,7 @@ export default function Test(props) {
 
   const makeAPICall = async () => {
     try {
+      
       const penyedia = dtPenyedia.aaData;
       const swakelola = dtSwakelola.aaData;
       const pdsw = dtPdsw.aaData;
@@ -334,7 +335,7 @@ export default function Test(props) {
         pagu: 0,
       };
 
-      total.slice(1).forEach((pin) => {
+      total.forEach((pin) => {
         countPdlTotal.paket += pin[2];
         countPdlTotal.pagu += pin[3];
         countEpcTotal.paket += pin[4];
@@ -876,10 +877,10 @@ export default function Test(props) {
 }
 
 export async function getServerSideProps() {
-  const filePath1 = path.join(process.cwd(), "/src/data/recap.json");
-  const filePath2 = path.join(process.cwd(), "/src/data/provider.json");
-  const filePath3 = path.join(process.cwd(), "/src/data/selfMan.json");
-  const filePath4 = path.join(process.cwd(), "/src/data/provSelf.json");
+  const filePath1 = path.join(process.cwd(), "/data/recap2023.json");
+  const filePath2 = path.join(process.cwd(), "/data/provider2023.json");
+  const filePath3 = path.join(process.cwd(), "/data/selfMan2023.json");
+  const filePath4 = path.join(process.cwd(), "/data/provSelf2023.json");
   const jsonData1 = await fsPromises.readFile(filePath1);
   const jsonData2 = await fsPromises.readFile(filePath2);
   const jsonData3 = await fsPromises.readFile(filePath3);
