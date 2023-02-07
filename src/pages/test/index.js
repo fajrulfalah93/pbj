@@ -34,7 +34,6 @@ export default function Test(props) {
 
   const makeAPICall = async () => {
     try {
-      
       const penyedia = dtPenyedia.aaData;
       const swakelola = dtSwakelola.aaData;
       const pdsw = dtPdsw.aaData;
