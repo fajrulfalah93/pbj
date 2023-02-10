@@ -11,6 +11,8 @@ function Footer() {
         <div>
           <Link
             href="https://www.instagram.com/ukpbj_mojokab/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center px-4 py-3 font-semibold text-brick-200 hover:text-white"
           >
             <svg
