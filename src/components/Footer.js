@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 function Footer() {
@@ -9,7 +8,7 @@ function Footer() {
       </div>
       <div>
         <div>
-          <Link
+          <a
             href="https://www.instagram.com/ukpbj_mojokab/"
             target="_blank"
             rel="noopener noreferrer"
@@ -26,7 +25,7 @@ function Footer() {
               />
             </svg>
             ukpbj_mojokab
-          </Link>
+          </a>
         </div>
       </div>
     </footer>
