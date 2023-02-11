@@ -31,22 +31,38 @@ export default function Sirup() {
     try {
       let response = await axios.get(
         "https://lpse.or.id/sirup/?mod=dataruppenyediakldi&idKldi=D170&tahun=" +
-          year
+          year, {
+            headers: {
+              Origin: "https://sirup-report.netlify.app"
+            }
+          }
       );
       const penyedia = response.data.aaData;
       response = await axios.get(
         "https://lpse.or.id/sirup/?mod=datarupswakelolakldi&idKldi=D170&tahun=" +
-          year
+          year, {
+            headers: {
+              Origin: "https://sirup-report.netlify.app"
+            }
+          }
       );
       const swakelola = response.data.aaData;
       response = await axios.get(
         "https://lpse.or.id/sirup/?mod=dataruppenyediaswakelolaallrekapkldi&idKldi=D170&tahun=" +
-          year
+          year, {
+            headers: {
+              Origin: "https://sirup-report.netlify.app"
+            }
+          }
       );
       const pdsw = response.data.aaData;
       response = await axios.get(
         "https://lpse.or.id/sirup/?mod=datatableruprekapkldi&idKldi=D170&tahun=" +
-          year
+          year, {
+            headers: {
+              Origin: "https://sirup-report.netlify.app"
+            }
+          }
       );
       const rekap = response.data.aaData;
 
