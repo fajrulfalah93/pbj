@@ -63,16 +63,6 @@ export default function Sirup() {
                       Login
                     </button>
                   </div>
-                  <p className="text-center text-sm text-gray-500">
-                    Anda belum memiliki akun?{" "}
-                    <a
-                      href="#!"
-                      className="font-semibold text-gray-600 hover:underline focus:text-gray-800 focus:outline-none"
-                    >
-                      Daftar
-                    </a>
-                    .
-                  </p>
                 </form>
               </div>
             </div>
